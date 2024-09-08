@@ -1,0 +1,28 @@
+@import 'styles/colors';
+
+.navigation-menu {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  color: white;
+  background-color: $primary;
+}
+
+.social-links {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  color: #dbcde6;
+}
+
+.mat-toolbar {
+  background-color: $primary;
+}

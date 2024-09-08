@@ -1,0 +1,109 @@
+<section class="flex-container">
+  <div fxLayout="column">
+    <div class="row">
+      <h1 class="section-title">Welcome to Fazuuper LLC Consultoring Inc.</h1>
+      <h3 class="section-subtitle">
+        Your one-stop solution for awesome stuff!
+      </h3>
+    </div>
+
+    <div fxLayout="row" class="row card-row">
+      <mat-card>
+        <mat-card-content>
+          <h1>Why Fazuuper?</h1>
+          <p>
+            Because we know exactly how to simplify the constitution process of
+            your company. Fazuuper has the best prices and smallest time
+            responses! We assure that you may begin your business travel in the
+            United States without issues and swiftly, at a reasonable price.
+          </p>
+          <ul fxLayout="row" fxLayoutGap="10px" class="check-list">
+            <li fxLayout="row" fxLayoutAAlign="center center">
+              <mat-icon>check-list</mat-icon>
+              <p>We accept all countries</p>
+            </li>
+            <li fxLayout="row" fxLayoutAAlign="center center">
+              <mat-icon>check-list</mat-icon>
+              <p>Full Support in Spanish and Portuguese</p>
+            </li>
+            <li fxLayout="row" fxLayoutAAlign="center center">
+              <mat-icon>check-list</mat-icon>
+              <p>Quick delivery</p>
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card>
+        <mat-card-content>
+          <img mat-card-image src="assets/images/imagen-empresa.jpg" />
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="row">
+      <h1 class="section-title">Our Pricing Plans</h1>
+    </div>
+
+    <div fxLayout="row" class="row card-row">
+      <mat-card class="pricing-plan silver-plan">
+        <mat-card-content>
+          <h1>Silver</h1>
+          <h3>Without Bank Account</h3>
+          <h1>$299</h1>
+          <ul fxLayout="row" fxLayoutGap="10px" class="check-list">
+            <li fxLayout="row" fxLayoutAAlign="center center">
+              <mat-icon>check-list</mat-icon>
+              <p>We create your Company in New Mexico</p>
+            </li>
+            <li fxLayout="row" fxLayoutAAlign="center center">
+              <mat-icon>check-list</mat-icon>
+              <p>We obtain the EIN</p>
+            </li>
+            <li fxLayout="row" fxLayoutAAlign="center center">
+              <mat-icon>check-list</mat-icon>
+              <p>We include the BOIR/FINCEN + BE-13 Forms</p>
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="pricing-plan gold-plan">
+        <mat-card-content>
+          <h1>Gold</h1>
+          <h3>With Bank Account</h3>
+          <h1>$499</h1>
+          <ul fxLayout="row" class="check-list">
+            <li fxLayout="row" fxLayoutAAlign="center">
+              <p>All from Silver and more:</p>
+            </li>
+            <li fxLayout="row" fxLayoutAAlign="center center">
+              <mat-icon style="padding-right: 6px">check-list</mat-icon>
+              <p class="check-list-item">
+                Contact for opening an account in Bank-On-Site in the U.S.
+                (Travel-only)
+              </p>
+            </li>
+            <li fxLayout="row" fxLayoutAAlign="center center">
+              <mat-icon style="padding-right: 8px">check-list</mat-icon>
+              <p class="check-list-item">
+                Apply to a Bank Account for your Company, including a Welcome
+                Bonus to our Customers!
+              </p>
+            </li>
+            <li fxLayout="row" fxLayoutAAlign="center center">
+              <mat-icon>check-list</mat-icon>
+              <p class="check-list-item">Utility Bill</p>
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <div fxLayout="column" fxLayoutAlign="center center" flex>
+    <button mat-button class="create-button" (click)="openCreateCompanyModal()">
+      <h3 class="section-subtitle">Create your own Company</h3>
+    </button>
+  </div>
+</section>

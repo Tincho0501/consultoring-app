@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cli-inmueble-app": {
+    "consultoring-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/consultoring-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -56,8 +56,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -87,15 +87,15 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cli-inmueble-app:build",
+            "browserTarget": "consultoring-app:build",
             "port": 5200
           },
           "configurations": {
             "prod": {
-              "browserTarget": "cli-inmueble-app:build:prod"
+              "browserTarget": "consultoring-app:build:prod"
             },
             "dev": {
-              "browserTarget": "cli-inmueble-app:build:dev"
+              "browserTarget": "consultoring-app:build:dev"
             }
           },
           "defaultConfiguration": "development"
@@ -103,7 +103,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cli-inmueble-app:build"
+            "browserTarget": "consultoring-app:build:build"
           }
         },
         "test": {
